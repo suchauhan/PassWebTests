@@ -13,8 +13,7 @@ import cucumber.api.CucumberOptions;
 
 @TestEnvironment(Environment.E2E)
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features="src/test/resources/features/PassWebFeatures", tags={"@TestinPASS"})
-//@CucumberOptions(features="src/test/resources/features",tags={"@Optycreation1"})
+@CucumberOptions(features="src/test/resources/features/PassWebFeatures", tags={"@PilotRegression"})
 public class CukesTest { 
 	
 	@BeforeClass

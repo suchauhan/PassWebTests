@@ -32,15 +32,16 @@ public class TC03_AddProductsForAllTypes {
 		//productConfigurationSteps.checkAddProducts();
 	}
 	
-	@When("^I select Entity and Product and apply the configuration on it.$")
+	/*@When("^I select Entity and Product and apply the configuration on it.$")
 	public void i_select_entity_and_product_for_adding_it(DataTable entityProductTable)
 	{
 		productConfigurationSteps.addProductandapplyConfigurations(entityProductTable);
-	}
+	}*/
 	
-	@When("^I select Entity and Product and adding it manually$")
-	public void i_select_entity_and_product_and_adding_it_manually(DataTable entityProductTable)
+	@When("^I select \"([^\"]*)\" and \"([^\"]*)\" and adding it manually$")
+	public void i_select_and_and_adding_it_manually(String arg1, String arg2) throws Throwable {
 	{
-		productConfigurationSteps.addProductmanually(entityProductTable);
+		productConfigurationSteps.addProductmanually(arg1, arg2);
 	}
+  }
 }

@@ -19,7 +19,7 @@ public class TC07_CheckForErrorCheckForAllProducts {
 	ProductConfigurationSteps productConfigurationSteps;
 	
 	@Steps
-	PassErrorCheckSteps passErrorCheck;
+	PassErrorCheckSteps passErrorCheckSteps;
 	
 	@Steps
 	DealSummarySteps dealSummarySteps;
@@ -28,8 +28,14 @@ public class TC07_CheckForErrorCheckForAllProducts {
 	@When("^I am checking the errors and correcting it$")
 	public void i_am_checking_the_errors_and_correcting_it() throws Throwable {
 		
-	   passErrorCheck.dealWithErrorsSales();
+	   passErrorCheckSteps.dealWithErrorsSales();
 	    
+	}
+	
+	@Then("^All errrors should be removed$")
+	public void all_errors_should_be_removed()
+	{
+		passErrorCheckSteps.refreshErrors();
 	}
 	
 	@When("^I submitting the NSP to POM$")

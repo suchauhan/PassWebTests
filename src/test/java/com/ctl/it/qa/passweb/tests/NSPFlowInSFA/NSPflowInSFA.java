@@ -47,8 +47,7 @@ public class NSPflowInSFA {
 	@When("^I search an existing LQ commercial Opportunity$")
 	public void i_search_an_existing_lq_commercial_opportunity()
 	{
-		//nspSteps.open_record("Opportunities", Page.commonData.getContainer("SFA").getFieldValue("LQCommercialOpportunity"));
-		nspSteps.open_record("Opportunities", "kd1_auto");
+		nspSteps.open_record("Opportunities", "Automation_Regression");
 	}
 	
 	@When("^I move to PASS through SFA$")
