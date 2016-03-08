@@ -14,7 +14,7 @@ Feature: Verify MassUpdate fields in Update Key field
 
     Examples: 
       | Entity | Product                          |
-      | QCC    | Metro Ethernet (LCTL)            |
+      | LCTL   | Metro Ethernet (LCTL)            |
       | LCTL   | Dedicated IP Bundle (LCTL)       |
       | QC     | Optical Wavelength Service (QC)  |
       | QC     | Metro Ethernet (QC)              |

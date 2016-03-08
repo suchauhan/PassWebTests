@@ -15,7 +15,7 @@ Feature: Verify Error Check functionality
 
     Examples: 
       | Entity | Product                          |
-      | QCC    | Metro Ethernet (LCTL)            |
+      | LCTL   | Metro Ethernet (LCTL)            |
       | LCTL   | Dedicated IP Bundle (LCTL)       |
       | QC     | Optical Wavelength Service (QC)  |
       | QC     | Metro Ethernet (QC)              |
